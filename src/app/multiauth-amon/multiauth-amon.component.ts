@@ -7,10 +7,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MultiauthAmonComponent implements OnInit {
 
-  test = "nimic";
+  test = true;
+  multilevelExpanded = false;
+  messageMenuExpanded = false;
+  userMenuExpanded = false;
+  sidebarExpanded = false;
+
   onClick() {
-    this.test = "altceva";
+    this.test = !this.test;
   }
+
+  expandMultilevel() {
+    this.multilevelExpanded = !this.multilevelExpanded;
+  }
+
+  expandMessageMenu() {
+    this.messageMenuExpanded = !this.messageMenuExpanded;
+  }
+
+  expandUserMenu() {
+    this.userMenuExpanded = !this.userMenuExpanded;
+  }
+
+  expandSideBar() {
+    this.sidebarExpanded = !this.sidebarExpanded;
+  }
+
   constructor() { }
 
   ngOnInit() {

@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { MultiauthAmonComponent } from './multiauth-amon/multiauth-amon.component';
 import { LogoComponent } from './logo/logo.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { MessageMenuComponent } from './message-menu/message-menu.component';
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { LogoComponent } from './logo/logo.component';
     AppComponent,
     HeroesComponent,
     MultiauthAmonComponent,
-    LogoComponent
+    LogoComponent,
+    NavbarComponent,
+    MessageMenuComponent
   ],
   imports: [
     BrowserModule
